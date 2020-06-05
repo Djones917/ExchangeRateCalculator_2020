@@ -1,5 +1,5 @@
 function calculate() {
-  fetch('items.json').then(res => console.log(res));
+  fetch('items.json').then(res => res.json()).then(data => console.log(data));
 }
 
 calculate();
